@@ -102,8 +102,8 @@ console.log(preservingFalsy); // '' (as myText is neither undefined nor null)
 
 <h3 id="Short-circuiting">Short-circuiting</h3>
 
-<p>Like the OR and AND logical operators, the right-hand side expression is not evaluated
-  if the left-hand side proves to be neither <code>null</code> nor <code>undefined</code>.
+<p>Like the OR and AND logical operators, the right-hand side expression is only evaluated
+  if the left-hand side proves to be <code>null</code> or <code>undefined</code>.
 </p>
 
 <pre class="brush: js">function A() { console.log('A was called'); return undefined;}
